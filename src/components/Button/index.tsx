@@ -10,13 +10,12 @@ import { styles, personalization } from './styles';
 
 type Props = TouchableHighlightProps & {
   labelText?: string;
-  vectorIcon?: ReactNode;
   isOperator?: boolean;
   double?: boolean,
   triple?: boolean
 }
 
-export function Button({labelText, isOperator, double, triple, vectorIcon, ...rest}:Props){
+export function Button({labelText, isOperator, double, triple, ...rest}:Props){
   return (
     <TouchableHighlight
       {...rest}
@@ -36,7 +35,7 @@ export function Button({labelText, isOperator, double, triple, vectorIcon, ...re
         ]
       }
         >
-        { labelText ? labelText : vectorIcon }
+        { labelText }
       </Text>
     </TouchableHighlight>
   );

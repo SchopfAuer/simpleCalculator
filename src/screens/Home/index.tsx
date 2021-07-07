@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { Button } from '../../components/Button';
 import { Display } from '../../components/Display';
-import { FontAwesome5 } from '@expo/vector-icons';
 
 import {
   View,
-  Text
 } from 'react-native';
 
 import { styles } from './styles';
@@ -97,16 +95,10 @@ export default function Home() {
     <View style={styles.container}>
       <Display value={displayValue} />
       <View style={styles.buttons} >
-        <Button vectorIcon={<FontAwesome5 
-            name='arrows-alt'
-            size={48}
-            color={'#000'}
-          />}
-        />
         <Button 
           labelText='AC'
           onPress={clearMemory}
-          double
+          triple
         />
 
         <Button

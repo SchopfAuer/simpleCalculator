@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   displayValue: {
-    fontSize: 50,
+    fontSize: 56,
     color: '#fff'
   },
   scrollContainer: {
